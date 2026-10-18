@@ -1,0 +1,133 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #3e4965;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f5f5f7;
+}
+
+/* Main container */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 62px 20px 40px;
+  text-align: center;
+}
+
+/* Main title */
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #f4f4f6;
+  text-shadow:
+    -4px -4px 0 #292d36,
+    4px -4px 0 #292d36,
+    -4px 4px 0 #292d36,
+    4px 4px 0 #292d36,
+    5px 6px 0 #292d36;
+  margin-bottom: 28px;
+}
+
+/* Subtitle */
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 62px;
+}
+
+/* Coin area */
+.coin-container {
+  position: relative;
+  width: 180px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Coin shadow */
+.shadow {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Result */
+.result {
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 25px;
+  margin-bottom: 64px;
+}
+
+/* Button */
+.flip-button {
+  width: 162px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background: #2378b9;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #216aa0;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.flip-button:hover {
+  background: #2c8bd0;
+}
+
+.flip-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #216aa0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding-top: 55px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    max-width: 340px;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 55px;
+  }
+
+  .coin {
+    width: 140px;
+    height: 140px;
+  }
+
+  .coin-inner span {
+    font-size: 78px;
+  }
+
+  .coin-container {
+    height: 205px;
+  }
+
+  .result {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}
